@@ -1,0 +1,5 @@
+jdk:
+  - openjdk11
+install:
+  - ./gradlew :SketchImageViewLoader:build :SketchImageViewLoader:publishToMavenLocal
+  - find . -name "*.aar"
