@@ -50,7 +50,9 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                artifact androidSourcesJar // optional sources
+                groupId = 'com.github.sceneren'
+                artifactId = 'MojitoSketchImageViewLoader'
+                version = '0.0.1' // optional sources
             }
         }
     }
